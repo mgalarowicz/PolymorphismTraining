@@ -6,38 +6,14 @@ using System.Threading.Tasks;
 
 namespace FootballApp
 {
-    abstract class Player
+    public abstract class Player
     {
-        private int effectivness;
+        public abstract string Position();
 
-        public virtual int Effectivness
-        {
-            get { return effectivness; }
-            set
-            {
+        public abstract int Skills();
 
-                if (value > 0 && value < 100)
-                {
-                    effectivness = value;
-                }
-                else
-                {
-                    effectivness = 0;
-                };
-            }
+        public abstract double Statistics();
 
-        }
-
-        public string Name { get; set; }
-
-        public abstract int Skills(int a, int b, int c, int d);
-
-        public abstract int Statistics(int a, int b, int c);
-
-        public virtual int PhysicalConditions(int height, int weight, string footed)
-        {
-            return height;
-        }
 
     }
 }

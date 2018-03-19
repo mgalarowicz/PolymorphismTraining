@@ -42,15 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Defender.cs" />
-    <Compile Include="Goalkeeper.cs" />
-    <Compile Include="IShowPlayerProfile.cs" />
-    <Compile Include="Midfielder.cs" />
+    <Compile Include="Players\Defender.cs" />
+    <Compile Include="Players\Goalkeeper.cs" />
+    <Compile Include="Players\Midfielder.cs" />
+    <Compile Include="OutputInfo.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="PlayerDecorator.cs" />
+    <Compile Include="PoorFoodDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShowGK.cs" />
-    <Compile Include="Striker.cs" />
+    <Compile Include="Players\Striker.cs" />
+    <Compile Include="ExtraTrainingDecorator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

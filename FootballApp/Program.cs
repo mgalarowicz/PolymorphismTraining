@@ -10,19 +10,26 @@ namespace FootballApp
     {
         static void Main(string[] args)
         {
-            //Player Marek = new Goalkeeper("Marek", new int[] { }, 0, new int[] { }, new object[] { });
+            Player Marek = new Striker();
 
-            Player Marek = new Goalkeeper();
+            OutputInfo.Output(Marek);
 
-            IShowPlayerProfile GK = new ShowGK();
-            
+            Marek = new ExtraTrainingDecorator(Marek);
+            Marek = new PoorFoodDecorator(Marek);
 
+            OutputInfo.Output(Marek);
 
-            //Player Marcin = new Defender();
+            Player Darek = new Goalkeeper();
+            OutputInfo.Output(Darek);
 
-            //Player Tomek = new Midfielder();
+            Player Artur = new Defender();
+            OutputInfo.Output(Artur);
 
-            //Player Arek = new Striker();
+            Player Marcin = new Midfielder();
+            OutputInfo.Output(Marcin);
+
+            Marcin = new ExtraTrainingDecorator(Marcin);
+            OutputInfo.Output(Marcin);
 
 
 
